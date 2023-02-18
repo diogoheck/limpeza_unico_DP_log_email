@@ -7,7 +7,7 @@ pasta_sincronizacao = ['.sync']
 
 
 def salvar_logs(conteudo, dir_raiz):
-    with open(dir_raiz + os.sep + 'log_limpeza_u_dp.txt', 'a') as log:
+    with open(dir_raiz + os.sep + 'log_limpeza_u_dp.txt', 'a', encoding='utf-8') as log:
         print(conteudo, file=log)
 
 
