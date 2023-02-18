@@ -1,6 +1,6 @@
 import os
 import shutil
-
+from envio_email import enviar_email
 
 lista_proibidos = ['Trabalhista']
 pasta_sincronizacao = ['.sync']
@@ -62,4 +62,6 @@ def limpeza_unico_pastas():
     salvar_logs('limpeza efetuada com sucesso!!')
 
 
-# limpeza_unico_pastas()
+if __name__ == '__main__':
+    limpeza_unico_pastas()
+    enviar_email()
