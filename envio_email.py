@@ -11,7 +11,7 @@ def enviar_email(dir_raiz):
     msg = EmailMessage()
 
     # textos do email
-    assunto = 'MENSAGEM AUTOMÁTICA -> Log Limpeza do rede da Pasta Trabalhista'
+    assunto = 'MENSAGEM AUTOMÁTICA -> Log Limpeza do Unico Contabil'
     body = open(dir_raiz + os.sep + 'corpo_email.txt',
                 'r', encoding='utf-8').read()
 

@@ -30,9 +30,9 @@ def limpeza_unico_pastas(dir_raiz):
         os.remove(dir_raiz + os.sep + 'log_limpeza_u_dp.txt')
 
     for i in os.listdir(cwd):
-        if os.path.isdir(i) and i in lista_proibidos and i not in pasta_sincronizacao:
+        if os.path.isdir(i) and i not in lista_proibidos and i not in pasta_sincronizacao:
             folder_list.append(i)
-        elif i in lista_proibidos and i not in pasta_sincronizacao and '.py' not in i:
+        elif i not in lista_proibidos and i not in pasta_sincronizacao and '.py' not in i:
             remover_arquivo(i, dir_raiz)
             pass
 
