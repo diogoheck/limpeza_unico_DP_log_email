@@ -16,8 +16,8 @@ def enviar_email(dir_raiz):
                 'r', encoding='utf-8').read()
 
     msg['Subject'] = assunto
-    msg['From'] = 'diogo.rodrigues@supervisao.com.vc'
-    msg['To'] = ('diogoheck6@gmail.com', 'diogo.rodrigues@supervisao.com.vc')
+    msg['From'] = 'diogo.rodrigues@xxx.com.vc'
+    msg['To'] = ('diogoheck6@gmail.com', 'diogo.rodrigues@xxxx.com.vc')
 
     # estruturação de um arquivo anexo
     anexo_path = dir_raiz + os.sep + 'log_limpeza_u_dp.txt'
@@ -34,7 +34,7 @@ def enviar_email(dir_raiz):
 
     smtpserver.ehlo()
     smtpserver.starttls()
-    smtpserver.login('diogo.rodrigues@supervisao.com.vc', 'D@241708')
+    smtpserver.login('diogo.rodrigues@zzz.com.vc', 'blabla')
     smtpserver.send_message(msg)
     smtpserver.close()
 
